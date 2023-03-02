@@ -5,6 +5,19 @@ model = load_model('keras_model.h5')
 cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
+f = open('labels.txt', 'r')
+
+try:
+    lines = f.readlines()
+    labels = list()
+    for line in lines:
+        labels.append(line.split(" ")[1].rstrip('\n'))
+    print("labels are: ", labels)
+
+finally:
+    f.close()
+
+
 while True: 
     ret, frame = cap.read()
     resized_frame = cv2.resize(frame, (224, 224), interpolation = cv2.INTER_AREA)
@@ -14,7 +27,12 @@ while True:
     prediction = model.predict(data)
     cv2.imshow('frame', frame)
     # Press q to close the window
-    print(prediction)
+    #print(prediction)
+   
+    print("prediction:", labels[np.argmax(prediction)])
+    
+
+    
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
             
