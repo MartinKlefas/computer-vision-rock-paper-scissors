@@ -1,9 +1,7 @@
 import random
 
-choices = ["Rock","Paper","Scissors"]
-
 def get_computer_choice():
-    cGuess = random.choice(choices)
+    cGuess = random.choice(["Rock","Paper","Scissors"])
     return cGuess
 
 def get_user_choice():
@@ -11,7 +9,7 @@ def get_user_choice():
         guess = input("Please choose your play: ")
 
         try:
-            if guess in choices:  
+            if guess in ["Rock","Paper","Scissors"]:  
                 break
             else:
                 print("Invalid Choice. Please choose from:", choices)
