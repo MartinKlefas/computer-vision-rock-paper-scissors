@@ -3,7 +3,8 @@ import random
 choices = ["Rock","Paper","Scissors"]
 
 def get_computer_choice():
-    return random.choice(choices)
+    cGuess = random.choice(choices)
+    return cGuess
 
 def get_user_choice():
     while True:
