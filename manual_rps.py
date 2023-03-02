@@ -18,3 +18,5 @@ def get_user_choice():
             print("Invalid Choice. Please choose from:", choices)
 
     return guess
+
+print(get_computer_choice())
