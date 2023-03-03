@@ -24,12 +24,17 @@ while True:
     image_np = np.array(resized_frame)
     normalized_image = (image_np.astype(np.float32) / 127.0) - 1 # Normalize the image
     data[0] = normalized_image
-    prediction = model.predict(data)
-    cv2.imshow('frame', frame)
+    prediction = model.predict(data,verbose= 0)
+    
     # Press q to close the window
     #print(prediction)
-   
-    print("prediction:", labels[np.argmax(prediction)])
+    strPrediction = labels[np.argmax(prediction)]
+    
+    cv2.putText(frame,strPrediction,(10, 50),
+                    cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255),4)
+
+    cv2.imshow('frame', frame)
+    #print("prediction:", strPrediction )
     
 
     
