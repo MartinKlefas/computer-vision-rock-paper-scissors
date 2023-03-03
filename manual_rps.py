@@ -43,5 +43,8 @@ def get_winner(computer_choice, user_choice):
             print("It is a tie!")
         
 
-get_winner(get_computer_choice(),get_user_choice())
+def play():
+    get_winner(get_computer_choice(),get_user_choice())
+
+play()
 
