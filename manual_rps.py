@@ -1,5 +1,5 @@
 import random
-
+choices = ["Rock","Paper","Scissors"]
 def get_computer_choice():
     cGuess = random.choice(["Rock","Paper","Scissors"])
     return cGuess
