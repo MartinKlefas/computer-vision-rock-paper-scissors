@@ -7,7 +7,7 @@ import time
 model = load_model('keras_model.h5')
 cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
-max_countdown = 3
+max_countdown = 5
 user_wins = 0
 computer_wins  = 0
 RoundsPlayed = 0
@@ -35,7 +35,7 @@ def get_prediction():
         cv2.imshow('Game', frame)
         strPrediction = labels[np.argmax(prediction)]
             
-    
+    print("You Chose: ", strPrediction)
     return strPrediction
 
 def play():
