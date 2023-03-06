@@ -35,3 +35,10 @@ There are 4 functions, to fit the 4 tasks:
 
 - play()
     - inexplicably needs to be there just to call the other functions from within a function.
+
+It's worth noting that some of the code is structured in a deliberately clumsy manner in order to pass the automated verification that's applied to it.
+
+# Potential Todo:
+- refactor into object oriented approach
+- retrain neural net to be more robust
+- GUI?
