@@ -38,6 +38,9 @@ There are 4 functions, to fit the 4 tasks:
 
 It's worth noting that some of the code is structured in a deliberately clumsy manner in order to pass the automated verification that's applied to it.
 
+![In game shot showing player giving "Paper" sign](Screenshot.png?raw=true "Screenshot of a player showing Paper to the game")
+
+
 # Potential Todo:
 - refactor into object oriented approach
 - retrain neural net to be more robust
