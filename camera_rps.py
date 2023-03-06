@@ -118,11 +118,16 @@ cap.release()
 cv2.destroyAllWindows()
 
 
-if user_wins > computer_wins:
-    print("Well done, you're the champion")
-elif computer_wins > user_wins:
-    print("Unlucky, Loser!")
+if user_wins == 3:
+    print("Looks like you dominated this game!")
+elif computer_wins == 3:
+    print("Wow, you really got your butt handed to you!")
 else:
-    print("Looks liker we're evenly matched!")
+    if user_wins > computer_wins:
+        print("Well done, you're the champion")
+    elif computer_wins > user_wins:
+        print("Unlucky, Loser!")
+    else:
+        print("seems we're evenly matched!")
 
 
