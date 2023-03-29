@@ -12,7 +12,7 @@ Create a simple TensorFlow model using Google Teachable Machine. This has been a
 
 Interpret and test the output of the TFLite model, so that it can be passed to the game code in a human readable format, and so more easily debugged. Create the game itself, first accepting input from the command line, to test functionality independently of the CV model.
 
-There are 4 functions, to fit the 4 tasks:
+Code a terminal based RPS game - implemented in [manual_rps.py](manual_rps.py). There are 4 functions, to fit the 4 tasks:
 - get_computer_choice()
     - Picks at random from a hard-coded list
     - could be one line, but isn't
@@ -33,12 +33,16 @@ There are 4 functions, to fit the 4 tasks:
 It's worth noting that some of the code is structured oddly in order to pass the automated verification that's applied to it.
 
 # Part 3
-Marry together the "Game" code and the "Vision" code such that the game can be played as intended showing signs to the computer webcam. This concluded the AICore tutorial Scenario.
+Marry together the "Game" code and the "Vision" code such that the game can be played as intended showing signs to the computer webcam. This was implemented in [camera_rps.py](camera_rps.py) This concluded the AICore tutorial Scenario.
 The below shows a player giving the paper sign to the camera in advance of their turn.
 ![In game shot showing player giving "Paper" sign](Screenshot.png?raw=true "Screenshot of a player showing Paper to the game")
 
+# Part 4
+Take into account ties, and make the game a "best of 5 rounds" - implementing better feedback on win/lose conditions to make the game more easily played. Feed back to the player what their gestures have been interpretted as, and introduce things like round timers so that the gameplay is more paced and controlled.
 
 # Todo:
-- refactor into object oriented approach
 - retrain neural net to be more robust
+    - Firstly understand current model performance
+    - Implement Train and Validation datasets, and measure the training progress with something like TensorBoard
+- refactor game itself into object oriented approach, for future ease of expansion
 - GUI?

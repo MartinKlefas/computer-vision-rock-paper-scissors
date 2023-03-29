@@ -39,8 +39,8 @@ def get_prediction():
     return strPrediction
 
 def play():
-    countDown = -200 # initialise this to impossible time
-    #start_time = time.time() # this isn't really the start - we have to wait for the webcam to open
+    countDown = -200 # initialise this to impossible time - as we need to wait for the cam as below
+     # this isn't really the start - we have to wait for the webcam to open
 
     while cap.isOpened():
         ret, frame = cap.read()
