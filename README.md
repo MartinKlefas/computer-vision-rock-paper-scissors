@@ -1,5 +1,5 @@
 
-# Computer Vision Rock Paper Sciccors
+# Computer Vision Rock Paper scissors
 This project is part of the AICore Python fundamentals course is intended to teach the basics of computer vision and automated classification models. It's an early stage project, and so the classification success rate of the model isn't rigorously assessed. The model training steps are done using an external black-box tool, but this is entirely adequate for a simple classification scenario, and similar to what might be used in an embedded machine or similar. 
 
 # Part 1
