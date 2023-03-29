@@ -34,7 +34,7 @@ It's worth noting that some of the code is structured oddly in order to pass the
 
 # Part 3
 Marry together the "Game" code and the "Vision" code such that the game can be played as intended showing signs to the computer webcam. This concluded the AICore tutorial Scenario.
-
+The below shows a player giving the paper sign to the camera in advance of their turn.
 ![In game shot showing player giving "Paper" sign](Screenshot.png?raw=true "Screenshot of a player showing Paper to the game")
 
 
