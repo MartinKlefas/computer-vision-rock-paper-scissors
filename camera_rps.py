@@ -54,7 +54,7 @@ def play():
         cv2.putText(frame,str(countDown),(round(frame.shape[1] / 2) - 15, round(frame.shape[0] / 2)+10),
                     cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255),3)
         
-        cv2.imshow("Game",frame)
+        cv2.imshow("Rock, Paper, Scissors",frame)
 
         # Press 'q' to exit
         if cv2.waitKey(10) == ord('q'):
